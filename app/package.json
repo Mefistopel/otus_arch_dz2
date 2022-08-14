@@ -1,0 +1,14 @@
+{
+  "name": "server_express1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrey Yanusov <jdkz@yandex.ru> (https://vk.com/an.yanusov)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
