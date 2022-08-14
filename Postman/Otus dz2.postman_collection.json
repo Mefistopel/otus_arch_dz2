@@ -9,20 +9,57 @@
 			"name": "CreateUser",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Host",
+						"value": "arch.homework",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"otus-user\",\r\n    \"email\": \"otus@example.com\",\r\n    \"password\": \"secret-password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost/users/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"users",
+						"create"
+					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "GetUser",
+			"name": "GetUsers",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Host",
+						"value": "arch.homework",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": ""
+					"raw": "http://localhost/users/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"users",
+						"get"
+					]
 				}
 			},
 			"response": []
@@ -30,10 +67,33 @@
 		{
 			"name": "UpdateUser",
 			"request": {
-				"method": "DELETE",
-				"header": [],
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Host",
+						"value": "arch.homework",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_user\": 1,\r\n    \"name\": \"otus-user-rename\",\r\n    \"email\": \"otus@example.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost/users/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"users",
+						"edit"
+					]
 				}
 			},
 			"response": []
@@ -41,10 +101,25 @@
 		{
 			"name": "DeleteUser",
 			"request": {
-				"method": "GET",
-				"header": [],
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Host",
+						"value": "arch.homework",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": ""
+					"raw": "http://localhost/users/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"users",
+						"delete",
+						"1"
+					]
 				}
 			},
 			"response": []
