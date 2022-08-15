@@ -1,0 +1,6 @@
+dependencies:
+- name: mysqldb
+  repository: file://../subcharts/mysqldb
+  version: 0.1.0
+digest: sha256:21bd88335f3938fe37d516ff3196c8d0f505a2ee09e7420422bdeacc763f6385
+generated: "2022-08-15T22:27:22.3053978+03:00"

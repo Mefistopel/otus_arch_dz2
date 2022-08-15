@@ -1,0 +1,13 @@
+apiVersion: v2
+name: otus
+description: Main chart
+
+type: application
+
+version: 0.1.0
+appVersion: 0.1.0
+
+dependencies:
+  - name: mysqldb
+    version: 0.1.0
+    repository: file://../subcharts/mysqldb
